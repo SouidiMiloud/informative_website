@@ -1,0 +1,53 @@
+{% extends 'home/base_temp.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="services-container">
+    <div><p class="service-name">Revêtements de sol </p></div>
+    <div class="services-row">
+        <img src="{% static 'images/parquet.jpg' %}" alt="parquet"/>
+        <div class="services-description">
+            <h2>Parquet </h2>
+            <p>
+                Élégant et intemporel, notre parquet ajoute chaleur et caractère à tout espace. Nous proposons divers motifs et finitions pour convenir à votre style.
+            </p>
+        </div>
+    </div>
+    
+    <div class="services-row">
+        <div class="services-description">
+            <h2>Vinyle</h2>
+            <p>Sol souple remonter plinthe Durable et polyvalent, le vinyle est parfait pour les zones à fort trafic. Choisissez parmi une gamme de designs imitant les matériaux naturels tout en offrant un entretien facile.</p>
+        </div>
+        <img src="{% static 'images/vinyle.jpg' %}" alt="vinyle"/>
+    </div>
+
+    <div class="services-row">
+        <img src="{% static 'images/linoleum.jpg' %}" alt="linoleum"/>
+        <div class="services-description">
+            <h2>Linoléum</h2>
+            <p>Écologique et résilient, le linoléum est une excellente option pour un revêtement de sol durable. Notre équipe vous aidera à choisir les bonnes couleurs et motifs pour votre environnement.</p>
+        </div>
+    </div>
+
+    <div class="services-row">
+        <div class="services-description">
+            <h2>Tapis</h2>
+            <p>Confortable et agréable, nous proposons une gamme de solutions de tapis qui améliorent le confort et l'acoustique de votre espace.</p>
+        </div>
+        <img src="{% static 'images/tapis.jpg' %}" alt="tapis"/>
+    </div>
+
+    <div><p class="service-name">Services de peinture</p></div>
+    <div class="services-desc">
+        <p>Nos services de peinture comprennent des applications intérieures et extérieures, utilisant des peintures de haute qualité qui offrent des résultats durables. Que ce soit pour une nouvelle couche de peinture pour vos murs ou des finitions détaillées, nous assurons une application impeccable à chaque fois.</p>
+    </div>
+
+    <div style="margin-top: -2rem;"><p class="service-name">Revêtements en époxy</p></div>
+    <div class="services-desc">
+        <p>Parfait pour les garages, sous-sols et espaces commerciaux, nos revêtements en époxy offrent durabilité et finition élégante. Nous pouvons personnaliser les couleurs et les designs pour élever vos sols à un niveau supérieur.</p>
+    </div>
+</div>
+
+{% endblock %}

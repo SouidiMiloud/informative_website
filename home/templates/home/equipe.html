@@ -1,0 +1,51 @@
+{% extends 'home/base_temp.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="equipe-container">
+    <div class="equipe-row">
+        <img src="{% static 'images/imgspecial.jpg' %}" alt="imgspecial"/>
+        <div class="equipe-description">
+            <p>
+                Chez M-Floor SRL, nous sommes une équipe passionnée
+                et qualifiée, dédiée à l'excellence dans chaque
+                projet. Notre engagement envers l'artisanat
+                garantit que vos besoins en peinture de sol et en
+                construction sont traités avec la plus grande
+                précision et soin. Sans sous-traitance ni
+                intermédiaires, notre équipe interne gère chaque
+                détail, garantissant cohérence, fiabilité et
+                résultats exceptionnels.
+            </p>
+        </div>
+    </div>
+    <div><p class="pourquoi-choisir">Pourquoi nous choisir ?</p></div>
+    <div class="equipe-row">
+        <div class="equipe-description">
+            <h2>Engagement envers l'Excellence</h2>
+            <p>Nous croyons que la ponctualité et la dévotion sont essentielles pour fournir des résultats de haute qualité. Chaque projet est réalisé à temps, avec un accent sur la précision et le soin, garantissant que votre espace corresponde exactement à vos attentes.</p>
+        </div>
+        <img src="{% static 'images/img14.jpg' %}" alt="img14"/>
+    </div>
+
+    <div class="equipe-row">
+        <img src="{% static 'images/mg13.jpg' %}" alt="mg13"/>
+        <div class="equipe-description">
+            <h2>Service Personnalisé </h2>
+            <p>De l'aide à choisir les bons matériaux à des conseils d'expert sur l'entretien de vos sols, nous vous accompagnons à chaque étape. Votre vision est notre priorité absolue, et nous adaptons chaque projet à vos besoins uniques et à votre budget.</p>
+        </div>
+    </div>
+
+    <div class="equipe-row">
+        <div class="equipe-description">
+            <h2>Garantie de Qualité </h2>
+            <p>Notre travail repose sur un principe simple : si nous ne sommes pas satisfaits, nous savons que vous ne le serez pas non plus. Nous mettons notre cœur dans chaque projet, traitant vos sols et vos espaces avec le soin qu'ils méritent.</p>
+        </div>
+        <img src="{% static 'images/img8.jpg' %}" alt="img8"/>
+    </div>
+    
+    <div><p class="equipe-phrase">Votre projet est notre fierté, et livrer la perfection est notre promesse !</p></div>
+</div>
+
+{% endblock %}

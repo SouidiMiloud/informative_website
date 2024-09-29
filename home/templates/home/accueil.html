@@ -1,0 +1,66 @@
+{% extends 'home/base_temp.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="accueil-container">
+    <div class="accueil-head">
+        <div class="head-container">
+            <p class="head-floor">M-Floor SRL</p>
+            <div class="head-revetements">
+                <p>REVÊTEMENTS DE SOL - PEINTURES</p>
+            </div>
+            <p class="head-logo">Motivé par la passion, perfectionné avec precision</p>
+        </div>
+    </div>
+
+    <p class="accueil-propos">À propos de M-Floor SRL</p>
+    <p class="accueil-description">
+        Nous sommes une société de vente et de pose de revêtements de sols souples tels que le linoléum, PVC, caoutchouc, tapis plain et autres.
+    </p>
+    <p class="accueil-description">
+        Nous travaillons essentiellement dans
+        les domaines médicaux-sociaux (hôpitaux, maisons de repos, crèches,..), bureaux, écoles, et boutiques commerciales.
+    </p>
+    <p class="accueil-description">
+        Malgré le fait que nous sommes spécialisés pour les grands chantiers, M-Floor SRL demeure une entreprise familiale, valorisant des relations de confiance et un travail de qualité.
+    </p>
+    
+    <a class="accueil-btn" href="{% url 'equipe' %}">EN SAVOIR PLUS</a>
+
+    <div class="special-images">
+        <img src="{% static 'images/mg13.jpg' %}" alt="img13"/>
+        <img src="{% static 'images/img14.jpg' %}" alt="img14"/>
+    </div>
+
+    <div class="images">
+        <img src="{% static 'images/imgspecial.jpg' %}" alt="special"/>
+        <img src="{% static 'images/img1.jpg' %}" alt="img1"/>
+        <img src="{% static 'images/img3.jpg' %}" alt="img3"/>
+    </div>
+
+    <p class="accueil-propos">Notre expertise</p>
+    <p class="accueil-description">
+        Avec un accent sur la qualité, la fiabilité et le
+        respect des délais, nous nous engageons à répondre à
+        vos besoins avec des services adaptés juste pour vous.
+    </p>
+    <p class="accueil-description">
+        Faites-nous confiance pour donner vie à votre vision,
+        un projet à la fois.
+    </p>
+
+    <div class="images">
+        <img src="{% static 'images/img4.jpg' %}" alt="img4"/>
+        <img src="{% static 'images/img5.jpg' %}" alt="img5"/>
+        <img src="{% static 'images/img6.jpg' %}" alt="img6"/>
+    </div>
+    <div class="images">
+        <img src="{% static 'images/img10.jpg' %}" alt="img10"/>
+        <img src="{% static 'images/img12.jpg' %}" alt="img12"/>
+        <img src="{% static 'images/img15.jpg' %}" alt="img15"/>
+    </div>
+</div>
+
+{% endblock %}
