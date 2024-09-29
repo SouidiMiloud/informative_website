@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
-MY_SITE = "https://9712-196-127-242-139.ngrok-free.app"
+MY_SITE = "https://76de-196-127-242-139.ngrok-free.app"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-y826=kq=if4rofo4-36_hc(r06h8@ax5$9a6a8t4l4&ii%p+vh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [MY_SITE[MY_SITE.find('/') + 2:], '127.0.0.1']
+ALLOWED_HOSTS = [MY_SITE[MY_SITE.find('/') + 2:], '127.0.0.1', 'www.mfloor.be', 'mfloor.be']
 CSRF_TRUSTED_ORIGINS = [MY_SITE]
 
 

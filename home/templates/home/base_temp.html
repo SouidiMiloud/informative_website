@@ -24,7 +24,7 @@
             justify-content: center;
             align-items: center;
         }
-        .nav-left img{
+        .nav-left img, .mobile-navbar img{
             width: 5.7rem;
             height: 5.7rem;
             margin-left: 1rem;
@@ -179,36 +179,58 @@
             text-decoration: none;
         }
 
-        .equipe-container, .services-container{
+        .equipe-cont{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .services-container{
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .equipe-container{
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
         }
-        .equipe-row, .services-row{
-            margin-top: 4rem;
+        .equipe-col{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .services-row{
+            margin-top: -1rem;
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
         }
-        .equipe-row img{
-            height: 23rem;
-            width: 40%;
-            border-radius: 15px;
-        }
-        .services-row img{
+        .equipe-col img{
             height: 18rem;
-            width: 30%;
+            width: 90%;
+            border-radius: 15px;
+            margin-top: 1.5rem;
+        }
+        
+        .services-row img{
+            height: 20rem;
+            width: 100%;
             border-radius: 15px;
         }
         .equipe-description, .services-description{
-            width: 40%;
+            width: 100%;
         }
         .services-desc{
-            width: 65%;
+            width: 85%;
+            margin-top: -3rem;
         }
         .equipe-description p, .services-description p, .services-desc p{
             font-size: 20px;
@@ -217,46 +239,226 @@
             display: flex;
             flex-direction: column;
         }
-        .equipe-description h2, .services-description h2, .services-desc h2{
+        .equipe-description h1, .services-description h2, .services-desc h2{
             width: 100%;
             text-align: center;
         }
-        .pourquoi-choisir, .service-name{
-            margin-top: 4rem;
-            margin-bottom: -1rem;
-            font-size: 2.5rem;
+        .equipe-desc{
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .equipe-desc p{
+            font-size: 18px;
+            line-height: 1.3;
+            display: flex;
+            flex-direction: column;
+        }
+        .pourquoi-choisir{
+            margin-top: 2rem;
+            font-size: 1.7rem;
             font-weight: bold;
             color: #359ccf;
         }
+        .service-name{
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #359ccf;
+            text-align: center;
+        }
+        .services-col{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
         .equipe-phrase{
-            margin-top: 3rem;
+            margin-top: 4rem;
             font-size: 2rem;
             font-weight: 550;
             color: #359ccf;
+            margin-bottom: -1rem;
         }
         .contact-row{
+            width: 100%;
             margin-top: 3rem;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+        }
+        .contact-container{
+            width: 75%;
+            margin-left: 50%;
+            transform: translateX(-50%);
         }
         .contact-info{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 40%;
+            width: 45%;
             height: 15rem;
         }
+        .contact-p{
+            font-size: 3rem;
+            font-weight: 550;
+        }
         #map{
-            width: 40%;
+            width: 45%;
             height: 25rem;
             border-radius: 10px;
+        }
+        .sendemail:hover{
+            cursor: pointer;
+        }
+
+        .mobile-navbar{
+            display: none;
+        }
+        .mobile-menu {
+            display: none; 
+            flex-direction: column;
+            align-items: center;
+            background-color: transparent;
+            width: 100%;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: white;
+            margin: 0.2rem 0;
+            font-weight: 550;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .equipe-cont-mobile{
+            display: none;
+        }
+
+        @media (max-width: 768px){
+            .contact-container{
+                width: 90%;
+            }
+            .contact-p{
+                font-size: 2rem;
+            }
+            .contact-info{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .contact-info i{
+                margin-right: 0.5rem;
+            }
+            #map{
+                width: 98%;
+            }
+            .contact-row{
+                flex-direction: column;
+            }
+            .equipe-cont-mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .equipe-desc{
+                width: 90%;
+            }
+            .equipe-cont-mobile img{
+                width: 97%;
+            }
+            .equipe-cont{
+                display: none;
+            }
+            .equipe-phrase{
+                width: 97%;
+                text-align: center;
+                margin-top: 2.5rem;
+                font-size: 1.2rem;
+                font-weight: 550;
+                color: #359ccf;
+                margin-bottom: -1rem;
+            }
+            .footer{
+                flex-direction: column;
+                height: fit-content;
+                padding: 0.5rem 0;
+            }
+            
+            .navbar{
+                display: none;
+            }
+            .mobile-navbar{
+                background-color: rgba(20, 20, 20, 0.85);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 0.2rem;
+            }
+            .mobile-navbar button{
+                transform: scale(1.2);
+            }
+
+            .head-floor{
+                font-size: 3rem;
+            }
+            .head-revetements{
+                width: 80%;
+            }
+            .head-revetements p{
+                font-size: 1.5rem;
+            }
+            .head-logo{
+                font-size: 1.5rem;
+            }
+            .accueil-propos{
+                margin-top: 3rem;
+                width: 100%;
+                text-align: center;
+                margin-bottom: -0.3rem;
+            }
+            .accueil-description{
+                width: 90%
+            }
+            .special-images img{
+                height: 12rem;
+            }
+            .images{
+                height: 12rem;
+            }
+            .images img{
+                height: 12rem;
+            }
+            .services-row{
+                flex-direction: column;
+            }
+            .services-row img{
+                height: 15rem;
+            }
+            .services-col{
+                width: 100%;
+            }
+            .services-desc{
+                width: 100%;
+            }
         }
     </style>
 
 </head>
 <body>
+    <nav class="mobile-navbar">
+        <img src="{% static 'images/logo_without_bg.png' %}" alt="logo" />
+        <div>
+            <button class="menu-toggle"><i class="fas fa-bars"></i> MENU</button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a id="accueil-mobile" href="{% url 'accueil' %}">ACCUEIL</a>
+            <a id="equipe-mobile" href="{% url 'equipe' %}">À PROPOS DE NOUS</a>
+            <a id="preferences-mobile" href="{% url 'preferences' %}">SERVICES</a>
+            <a id="contact-mobile" href="{% url 'contact' %}">NOUS CONTACTER</a>
+        </div>
+    </nav>
+
     <nav class="navbar">
         <div class="nav-left">
             <img src="{% static 'images/logo_without_bg.png' %}" alt="logo" />
@@ -294,14 +496,14 @@
         <div class="footer-elem">
             <i class="fas fa-envelope"></i>
             <div class="footer-info">
-                tahirajmeni@gmail.com
+                <p>tahirajmeni@gmail.com</p>
             </div>
         </div>
 
         <div class="footer-elem">
-        <i class="fas fa-receipt"></i>
+            <i class="fas fa-receipt"></i>
             <div class="footer-info">
-                BE 0785 499 466
+                <p>BE 0785 499 466</p>
             </div>
         </div>
     </div>
@@ -335,6 +537,18 @@
         }
 
 
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            if (mobileMenu.style.display === 'flex') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'flex';
+            }
+        });
+
+
         var map = L.map('map').setView([50.4669, 4.8674], 15); 
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -344,6 +558,10 @@
         L.marker([50.4669, 4.8674]).addTo(map)
             .bindPopup('Our Location')
             .openPopup();
+
+        function sendEmail() {
+            window.location.href = "mailto:tahirajmeni@gmail.com";
+        }
     </script>
 </body>
 </html>
